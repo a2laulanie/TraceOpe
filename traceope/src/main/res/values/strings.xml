@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TraceOpe</string>
+    <string name="hello_traceope">Bienvenue dans\nTRACEOPE</string>
+
+    <string name="menu_1">GEOLOCALISATION</string>
+    <string name="menu_2">FIBRE</string>
+    <string name="menu_3">MAINTENANCE</string>
+    <string name="menu_4">COMPARAISON</string>
+
+
+    <string name="action_settings">Settings</string>
+    <string name="action_person">Personnes</string>
+    <string name="hello">Identifiez-vous</string>
+    <string name="u">Nom</string>
+    <string name="l">Login</string>
+    <string name="r">Register</string>
+    <string name="p">Mot de passe</string>
+    <string name="user_login">user</string>
+
+    <string name="lorem_ipsum">lorem_ipsumlorem_ipsumlorem_ipsumlorem_ipsumlorem_ipsumlorem_ipsumlorem_ipsumlorem_ipsumlorem_ipsumlorem_ipsumlorem_ipsumlorem_ipsumlorem_ipsumlorem_ipsumlorem_ipsumlorem_ipsumlorem_ipsum</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="fragment_00_text"> - Enclenchez le bouton On/Off situé sur le côté droit\n- Le détecteur s\'initialise\n- Attendez le décompte de 8 à 0 </string>
+    <string name="fragment_01_text">Entrez dans le menu "Détecteur/Beacon" </string>
+    <string name="fragment_02_text">Sélectionnez le détecteur</string>
+    <string name="fragment_03_text"> - Appuyez sur "Détecteur Connect"\n- Le niveau de batterie apparaît en vert </string>
+    <string name="fragment_04_text"> - Le numéro de la balise recherchée s\'affiche\n- Appuyez ensuite sur le bouton "Géoloc on"</string>
+    <string name="fragment_05_text"> - Le détecteur affiche une animation en mode écoute\n- Attendre l\'affichage suivant :</string>
+    <string name="fragment_06_text"> - Appuyer alors sur le bouton pour déclencher le mode recherche lointaine</string>
+    <string name="fragment_07_text"> - La flèche indique que vous devez effectuer une rotation lente en 30 secondes afin que le détecteur repère la direction à prendre</string>
+    <string name="fragment_08_text"> - La chambre est localisée\n- Suivez la flèche\n- Jusqu\'à ce que le détecteur passe en mode recherche proche comme ci-dessous</string>
+    <string name="fragment_09_text"> - Un signal sonore lent démarre\n- Suivez la direction\n- Il s\'accélère lorsque vous approchez de la chambre\n- Il émet en continue à destination.</string>
+
+
+    <string name="title_activity_rope">Géolocalisation</string>
+    <string name="rop_info_txt">Sélectionnez votre route optique</string>
+    <string name="btn_file_chooser">Download</string>
+    <string name="action_tutoriel">Tutoriel</string>
+    <string name="action_geoloc">Geolocalisation</string>
+    <string name="action_detecteur">Détecteur/Beacon</string>
+
+
+    <string name="title_activity_slide">Tutoriel</string>
+    <string name="action_previous">Previous</string>
+    <string name="action_next">Next</string>
+    <string name="action_finish">Finish</string>
+    <string name="title_template_step">Step </string>
+
+
+    <string name="folder">Dossier</string>
+    <string name="parentDirectory">Répertoire précédent</string>
+    <string name="fileSize">Taille du fichier </string>
+    <string name="currentDir">Répertoire courant</string>
+
+    <string name="title_activity_geoloc">Détecteur/Beacon</string>
+
+
+    <string name="action_free">Libre</string>
+    <string name="action_ticket">Tickets</string>
+    <string name="title_activity_report">Maintenance</string>
+    <string name="get_photo">Prenez une photo</string>
+    <string name="get_txt_photo">Entrez vos commentaires</string>
+    <string name="photo_send_mail">Envoyez par mail</string>
+    <string name="title_activity_ticket_report">Maintenance</string>
+    <string name="bt_sendTicket">Envoyer par Mail</string>
+
+
+    <string name="formulaire_ticket">Remplissez le formulaire\n de maintenance</string>
+    <string name="ticket_niveau">Entrez le niveau</string>
+    <string name="menu_incident">Incident</string>
+    <string name="menu_maintenance">Déclaration maintenance</string>
+    <string name="reseau_fixe">fixe</string>
+    <string name="reseau_mobile">Réseau mobile</string>
+    <string name="domaine_prive">privé</string>
+
+    <string name="domaine_public">Domaine public</string>
+
+
+    <string-array name="ticket_level">
+        <item>1</item>
+        <item>1.5</item>
+        <item>2</item>
+        <item>2.5</item>
+        <item>3</item>
+        <item>3.5</item>
+        <item>4</item>
+        <item>4.5</item>
+        <item>5</item>
+    </string-array>
+
+
+    <string-array name="domaine_public">
+        <item>Trottoir</item>
+        <item>Route</item>
+        <item>Voie de bus</item>
+        <item>Accès véhicule d\'urgence</item>
+    </string-array>
+
+
+    <string-array name="domaine_prive">
+        <item>Propriété privée</item>
+        <item>SNCF</item>
+        <item>VNF</item>
+        <item>Opérateur</item>
+        <item>Autoroute</item>
+    </string-array>
+
+    <string name="intervenant">Coordonnées de l\'intervenant</string>
+    <string name="superviseur">Coordonnées du superviseur</string>
+    <string name="alerte">Alerte Point de vigilance</string>
+
+    <string-array name="cable_nom">
+        <item>n°1</item>
+        <item>n°2</item>
+    </string-array>
+
+    <string-array name="cable_nbr">
+        <item>câble 120 Fo</item>
+        <item>câble100 Fo</item>
+        <item>câble108 Fo</item>
+       </string-array>
+
+    <string-array name="cable_capacite">
+        <item>capacité KPN B</item>
+        <item>capacité KPN A</item>
+    </string-array>
+
+    <string-array name="fixe_no">
+        <item>Chambre</item>
+        <item>Fourreaux</item>
+        <item>Génie civil</item>
+        <item>Répartiteur</item>
+        <item>Repérage étiquetage</item>
+    </string-array>
+
+
+    <string name="fibre_info_txt">Sélectionnez votre feuille excel</string>
+    <string name="action_bpe_compare">Comparer les BPE</string>
+    <string name="action_fibre">BPE travail</string>
+    <string name="title_activity_fibre">Fibre</string>
+    <string name="action_code_couleur">Codes couleur</string>
+
+    <string name="title_activity_reader">BPE de travail</string>
+
+
+    <string name="title_activity_slide_color">Codes couleur</string>
+
+
+
+    <string name="tape_side_A">Face A</string>
+    <string name="tape_side_B">Face B</string>
+    <string name="pipe_type">K7 type</string>
+    <string name="pipe_rope">Câble</string>
+    <string name="pipe_origin">Origine</string>
+    <string name="pipe_color">Couleur</string>
+    <string name="pipe_status">Status</string>
+    <string name="fibre_number">N°Fibre</string>
+    <string name="fibre_type">Type fibre</string>
+    <string name="nbre_unit">Nombre d\'unités utilisées : 14</string>
+    <string name="tape_col_A">Colonne A</string>
+    <string name="tape_col_B">Colonne B</string>
+    <string name="btn_save_excel_data">Enregistrez vos modifications</string>
+    <string name="btn_send_excel_data">Exportez le BPE </string>
+    <string name="btn_compare_excel_data">Comparez les BPE </string>
+    <string name="btn_send_mail_excel_data">Envoyez par Mail</string>
+
+    <string-array name="fibre_state_array">
+        <item>SPLICE</item>
+        <item>LOVE</item>
+        <item>HS</item>
+        <item>Coupée à ras</item>
+        <item/>
+    </string-array>
+
+
+</resources>
+

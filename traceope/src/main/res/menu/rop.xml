@@ -1,0 +1,28 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.traceope.app.activity.RopeActivity" >
+
+    <item
+        android:id="@+id/user"
+        android:title="@string/user_login"
+        android:icon="@drawable/ic_action_person"
+        android:showAsAction="ifRoom|withText"/>
+
+    <item android:id="@+id/action_tutoriel"
+        android:title="@string/action_tutoriel"
+        android:orderInCategory="100"
+        android:showAsAction="never" />
+
+    <item android:id="@+id/action_geoloc"
+        android:title="@string/action_geoloc"
+        android:orderInCategory="100"
+        android:showAsAction="never" />
+
+
+    <item android:id="@+id/action_detecteur"
+        android:title="@string/action_detecteur"
+        android:orderInCategory="100"
+        android:showAsAction="never" />
+
+
+</menu>

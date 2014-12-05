@@ -1,0 +1,3247 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:scrollbars="vertical">
+
+
+    <TableLayout
+        android:id="@+id/input_geolocalisation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:scrollbars="vertical"
+        android:shrinkColumns="*"
+        android:stretchColumns="*">
+
+        <TableRow
+            android:id="@+id/tableRowTitle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/TitleReaderStatus"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:layout_span="9"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:textIsSelectable="true" />
+
+            <EditText
+                android:id="@+id/titredetectiond2"
+                android:layout_width="wrap_content"
+                android:layout_height="58dp"
+                android:layout_span="6"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:textIsSelectable="true" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRowSpace1"
+            android:layout_width="match_parent"
+            android:layout_height="5dp">
+
+            <TextView
+                android:id="@+id/TextViewspace1"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_span="15"
+                android:background="#e37a26" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRowFace"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/TextViewFace1"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:layout_span="9"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:text="@string/tape_side_A"
+                android:textIsSelectable="true" />
+
+            <TextView
+                android:id="@+id/TextViewFace2"
+                android:layout_width="wrap_content"
+                android:layout_height="58dp"
+                android:layout_span="6"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:text="@string/nbre_unit"
+                android:textIsSelectable="true" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRowSpace2"
+            android:layout_width="match_parent"
+            android:layout_height="5dp">
+
+            <TextView
+                android:id="@+id/TextViewspace2"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_span="15"
+                android:background="#999999" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRowColonnes"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:background="#DDDDDD">
+
+            <TextView
+                android:id="@+id/TextViewcol1"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:layout_span="4"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewcol2"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:layout_span="4"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:text="@string/tape_col_A"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewcol3"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewcol4"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:layout_span="4"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:text="@string/tape_col_B"
+                android:textIsSelectable="false" />
+        </TableRow>
+        <!-- *****************************************************A DATA******************************************************************************** -->
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#999999">
+
+            <TextView
+                android:id="@+id/titre1_bpe"
+                android:layout_width="wrap_content"
+                android:layout_height="52dp"
+                android:layout_span="2"
+                android:gravity="center"
+                android:text="@string/pipe_type"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/titre3_bpe"
+                android:layout_width="wrap_content"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:text="@string/pipe_rope"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/titre4_bpe"
+                android:layout_width="wrap_content"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:text="@string/pipe_origin"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/titre5_bpe"
+                android:layout_width="wrap_content"
+                android:layout_height="58dp"
+                android:layout_span="2"
+                android:gravity="center"
+                android:text="@string/pipe_color"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/titre7_bpe"
+                android:layout_width="wrap_content"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:text="@string/fibre_number"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/titre8_bpe"
+                android:layout_width="wrap_content"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:text="@string/fibre_type"
+                android:textColor="@color/black"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/titre9_bpe"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:text="@string/pipe_status"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/titre10_bpe"
+                android:layout_width="wrap_content"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:text="@string/fibre_number"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/titre11_bpe"
+                android:layout_width="wrap_content"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:text="@string/fibre_type"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/titre12_bpe"
+                android:layout_width="wrap_content"
+                android:layout_height="58dp"
+                android:layout_span="2"
+                android:gravity="center"
+                android:text="@string/pipe_color"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/titre13_bpe"
+                android:layout_width="wrap_content"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:text="@string/pipe_rope"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/titre14_bpe"
+                android:layout_width="wrap_content"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:text="@string/pipe_origin"
+                android:textIsSelectable="false" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow6"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:background="#DDDDDD">
+
+            <TextView
+                android:id="@+id/TextViewA00"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewA01"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewA02"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewA03"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewA04"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewA05"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewA06"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewA07"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="true" />
+
+            <Spinner
+                android:id="@+id/TextViewA08"
+                android:layout_width="145dp"
+                android:layout_height="58dp" />
+
+            <TextView
+                android:id="@+id/TextViewA09"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewA010"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewA011"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewA012"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewA013"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewA014"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow7"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:background="#FFFFFF">
+
+            <TextView
+                android:id="@+id/TextViewA10"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewA11"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewA12"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewA13"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewA14"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewA15"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewA16"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewA17"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <Spinner
+                android:id="@+id/TextViewA18"
+                android:layout_width="114dp"
+                android:layout_height="58dp" />
+
+            <TextView
+                android:id="@+id/TextViewA19"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewA110"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewA111"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewA112"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewA113"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewA114"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow8"
+            android:layout_width="match_parent"
+            android:layout_height="114dp"
+            android:background="#DDDDDD">
+
+            <TextView
+                android:id="@+id/TextViewA20"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewA21"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewA22"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewA23"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewA24"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewA25"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewA26"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewA27"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <Spinner
+                android:id="@+id/TextViewA28"
+                android:layout_width="114dp"
+                android:layout_height="58dp" />
+
+            <TextView
+                android:id="@+id/TextViewA29"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewA210"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewA211"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewA212"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewA213"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewA214"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow9"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:background="#FFFFFF">
+
+            <TextView
+                android:id="@+id/TextViewA30"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewA31"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewA32"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewA33"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewA34"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewA35"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewA36"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewA37"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <Spinner
+                android:id="@+id/TextViewA38"
+                android:layout_width="114dp"
+                android:layout_height="58dp" />
+
+            <TextView
+                android:id="@+id/TextViewA39"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewA310"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewA311"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewA312"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewA313"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewA314"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow10"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:background="#DDDDDD">
+
+            <TextView
+                android:id="@+id/TextViewA40"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewA41"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewA42"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewA43"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewA44"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewA45"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewA46"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewA47"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <Spinner
+                android:id="@+id/TextViewA48"
+                android:layout_width="114dp"
+                android:layout_height="58dp" />
+
+            <TextView
+                android:id="@+id/TextViewA49"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewA410"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewA411"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewA412"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewA413"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewA414"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow11"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:background="#FFFFFF">
+
+            <TextView
+                android:id="@+id/TextViewA50"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewA51"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewA52"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewA53"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewA54"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewA55"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewA56"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewA57"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <Spinner
+                android:id="@+id/TextViewA58"
+                android:layout_width="114dp"
+                android:layout_height="58dp" />
+
+            <TextView
+                android:id="@+id/TextViewA59"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewA510"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewA511"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewA512"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewA513"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewA514"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow12"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:background="#DDDDDD">
+
+            <TextView
+                android:id="@+id/TextViewA60"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewA61"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewA62"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewA63"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewA64"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewA65"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewA66"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewA67"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <Spinner
+                android:id="@+id/TextViewA68"
+                android:layout_width="114dp"
+                android:layout_height="58dp" />
+
+            <TextView
+                android:id="@+id/TextViewA69"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewA610"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewA611"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewA612"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewA613"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewA614"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow13"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="#FFFFFF">
+
+            <TextView
+                android:id="@+id/TextViewA70"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewA71"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewA72"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewA73"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewA74"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewA75"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewA76"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewA77"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <Spinner
+                android:id="@+id/TextViewA78"
+                android:layout_width="114dp"
+                android:layout_height="58dp" />
+
+            <TextView
+                android:id="@+id/TextViewA79"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewA710"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewA711"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewA712"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewA713"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewA714"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow14"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:background="#DDDDDD">
+
+            <TextView
+                android:id="@+id/TextViewA80"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewA81"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewA82"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewA83"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewA84"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewA85"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewA86"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewA87"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <Spinner
+                android:id="@+id/TextViewA88"
+                android:layout_width="114dp"
+                android:layout_height="58dp" />
+
+            <TextView
+                android:id="@+id/TextViewA89"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewA810"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewA811"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewA812"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewA813"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewA814"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow15"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:id="@+id/TextViewA90"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewA91"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewA92"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewA93"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewA94"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewA95"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewA96"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewA97"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <Spinner
+                android:id="@+id/TextViewA98"
+                android:layout_width="114dp"
+                android:layout_height="58dp" />
+
+            <TextView
+                android:id="@+id/TextViewA99"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewA910"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewA911"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewA912"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewA913"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewA914"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+        </TableRow>
+
+        <!-- ***************************************************B SIDE************************************************************************** -->
+
+        <TableRow
+            android:id="@+id/tableRowSpaceB1"
+            android:layout_width="match_parent"
+            android:layout_height="5dp">
+
+            <TextView
+                android:id="@+id/TextViewspaceB1"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_span="15"
+                android:background="#999999" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRowFaceB"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:id="@+id/TextViewFaceB1"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:layout_span="9"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:text="FACE B"
+                android:textIsSelectable="true" />
+
+            <TextView
+                android:id="@+id/TextViewFaceB2"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:layout_span="6"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:text="Nombre d&apos;unités utilisées :10"
+                android:textIsSelectable="true" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRowSpaceB2"
+            android:layout_width="match_parent"
+            android:layout_height="5dp">
+
+            <TextView
+                android:id="@+id/TextViewspaceB2"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_span="15"
+                android:background="#999999" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRowColonnesB"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:background="#DDDDDD">
+
+            <TextView
+                android:id="@+id/TextViewcolB1"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:layout_span="4"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewcolB2"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:layout_span="4"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:text="Colonne A"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewcolB3"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewcolB4"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:layout_span="4"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:text="Colonne B"
+                android:textIsSelectable="false" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRowB4"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:background="#999999">
+
+            <TextView
+                android:id="@+id/titre1"
+                android:layout_width="wrap_content"
+                android:layout_height="52dp"
+                android:layout_span="2"
+                android:gravity="center"
+                android:text="@string/pipe_type"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/titre3"
+                android:layout_width="wrap_content"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:text="@string/pipe_rope"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/titre4"
+                android:layout_width="wrap_content"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:text="@string/pipe_origin"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/titre5"
+                android:layout_width="wrap_content"
+                android:layout_height="58dp"
+                android:layout_span="2"
+                android:gravity="center"
+                android:text="@string/pipe_color"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/titre7"
+                android:layout_width="wrap_content"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:text="@string/fibre_number"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/titre8"
+                android:layout_width="wrap_content"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:text="@string/fibre_type"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/titre9"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:text="@string/pipe_status"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/titre10"
+                android:layout_width="wrap_content"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:text="@string/fibre_number"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/titre11"
+                android:layout_width="wrap_content"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:text="@string/fibre_type"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/titre12"
+                android:layout_width="wrap_content"
+                android:layout_height="58dp"
+                android:layout_span="2"
+                android:gravity="center"
+                android:text="@string/pipe_color"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/titre13"
+                android:layout_width="wrap_content"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:text="@string/pipe_rope"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/titre14"
+                android:layout_width="wrap_content"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:text="@string/pipe_origin"
+                android:textIsSelectable="false" />
+        </TableRow>
+
+        <!-- ***************************************************B DATA************************************************************************** -->
+
+        <TableRow
+            android:id="@+id/tableRowB6"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:background="#DDDDDD">
+
+            <TextView
+                android:id="@+id/TextViewB00"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB01"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB02"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB03"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB04"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB05"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB06"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB07"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <Spinner
+                android:id="@+id/TextViewB08"
+                android:layout_width="145dp"
+                android:layout_height="58dp" />
+
+            <TextView
+                android:id="@+id/TextViewB09"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB010"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB011"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB012"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB013"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB014"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRowB7"
+            android:layout_width="match_parent"
+            android:layout_height="58dp">
+
+            <TextView
+                android:id="@+id/TextViewB10"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB11"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB12"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB13"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB14"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB15"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB16"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB17"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <Spinner
+                android:id="@+id/TextViewB18"
+                android:layout_width="145dp"
+                android:layout_height="58dp" />
+
+            <TextView
+                android:id="@+id/TextViewB19"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB110"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB111"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB112"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB113"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB114"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRowB8"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:background="#DDDDDD">
+
+            <TextView
+                android:id="@+id/TextViewB20"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB21"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB22"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB23"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB24"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB25"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB26"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB27"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <Spinner
+                android:id="@+id/TextViewB28"
+                android:layout_width="145dp"
+                android:layout_height="58dp" />
+
+            <TextView
+                android:id="@+id/TextViewB29"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB210"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB211"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB212"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB213"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB214"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRowB9"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:id="@+id/TextViewB30"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB31"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB32"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB33"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB34"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB35"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB36"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB37"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <Spinner
+                android:id="@+id/TextViewB38"
+                android:layout_width="145dp"
+                android:layout_height="58dp" />
+
+            <TextView
+                android:id="@+id/TextViewB39"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB310"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB311"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB312"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB313"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB314"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRowB10"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:background="#DDDDDD">
+
+            <TextView
+                android:id="@+id/TextViewB40"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB41"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB42"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB43"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB44"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB45"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB46"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB47"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <Spinner
+                android:id="@+id/TextViewB48"
+                android:layout_width="145dp"
+                android:layout_height="58dp" />
+
+            <TextView
+                android:id="@+id/TextViewB49"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB410"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB411"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB412"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB413"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB414"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRowB11"
+            android:layout_width="match_parent"
+            android:layout_height="58dp">
+
+            <TextView
+                android:id="@+id/TextViewB50"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB51"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB52"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB53"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB54"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB55"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB56"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB57"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <Spinner
+                android:id="@+id/TextViewB58"
+                android:layout_width="145dp"
+                android:layout_height="58dp" />
+
+            <TextView
+                android:id="@+id/TextViewB59"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB510"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB511"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB512"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB513"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB514"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRowB12"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="#DDDDDD">
+
+            <TextView
+                android:id="@+id/TextViewB60"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB61"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB62"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB63"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB64"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB65"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB66"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB67"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <Spinner
+                android:id="@+id/TextViewB68"
+                android:layout_width="145dp"
+                android:layout_height="58dp" />
+
+            <TextView
+                android:id="@+id/TextViewB69"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB610"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB611"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB612"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB613"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB614"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRowB13"
+            android:layout_width="match_parent"
+            android:layout_height="58dp">
+
+            <TextView
+                android:id="@+id/TextViewB70"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB71"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB72"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB73"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB74"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB75"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB76"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB77"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <Spinner
+                android:id="@+id/TextViewB78"
+                android:layout_width="145dp"
+                android:layout_height="58dp" />
+
+            <TextView
+                android:id="@+id/TextViewB79"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB710"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB711"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB712"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB713"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB714"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRowB14"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="#DDDDDD">
+
+            <TextView
+                android:id="@+id/TextViewB80"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB81"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB82"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB83"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB84"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB85"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB86"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB87"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <Spinner
+                android:id="@+id/TextViewB88"
+                android:layout_width="145dp"
+                android:layout_height="58dp" />
+
+            <TextView
+                android:id="@+id/TextViewB89"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB810"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB811"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB812"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB813"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB814"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRowB15"
+            android:layout_width="match_parent"
+            android:layout_height="58dp">
+
+            <TextView
+                android:id="@+id/TextViewB90"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB91"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB92"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB93"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB94"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB95"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB96"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB97"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <Spinner
+                android:id="@+id/TextViewB98"
+                android:layout_width="145dp"
+                android:layout_height="58dp" />
+
+            <TextView
+                android:id="@+id/TextViewB99"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB910"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB911"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB912"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB913"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB914"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRowB16"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:background="#DDDDDD">
+
+            <TextView
+                android:id="@+id/TextViewB100"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB101"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB102"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB103"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB104"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB105"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB106"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB107"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <Spinner
+                android:id="@+id/TextViewB108"
+                android:layout_width="145dp"
+                android:layout_height="58dp" />
+
+            <TextView
+                android:id="@+id/TextViewB109"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB1010"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB1011"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB1012"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB1013"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB1014"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRowB17"
+            android:layout_width="match_parent"
+            android:layout_height="58dp">
+
+            <TextView
+                android:id="@+id/TextViewB11b0"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB11b1"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB11b2"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB11b3"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB11b4"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB115"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB116"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB117"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <Spinner
+                android:id="@+id/TextViewB118"
+                android:layout_width="145dp"
+                android:layout_height="58dp" />
+
+            <TextView
+                android:id="@+id/TextViewB119"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB1110"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB1111"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB1112"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB1113"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB1114"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRowB18"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:background="#DDDDDD">
+
+            <TextView
+                android:id="@+id/TextViewB120"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB121"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB122"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB123"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB124"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB125"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB126"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB127"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <Spinner
+                android:id="@+id/TextViewB128"
+                android:layout_width="145dp"
+                android:layout_height="58dp" />
+
+            <TextView
+                android:id="@+id/TextViewB129"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB1210"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB1211"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB1212"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB1213"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB1214"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRowB19"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:id="@+id/TextViewB130"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB131"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB132"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB133"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB134"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB135"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB136"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB137"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <Spinner
+                android:id="@+id/TextViewB138"
+                android:layout_width="145dp"
+                android:layout_height="58dp" />
+
+            <TextView
+                android:id="@+id/TextViewB139"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB1310"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB1311"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB1312"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB1313"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB1314"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRowB20"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:background="#DDDDDD">
+
+            <TextView
+                android:id="@+id/TextViewB140"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB141"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB142"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB143"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB144"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB145"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB146"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB147"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB148"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB149"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB1410"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB1411"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB1412"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB1413"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/TextViewB1414"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:textIsSelectable="false" />
+        </TableRow>
+
+       <!-- <TableRow
+            android:id="@+id/tableRowButton1"
+            android:layout_width="match_parent"
+            android:layout_height="58dp">
+
+            <Button
+                android:id="@+id/btn_compare_excel_data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_span="15"
+                android:gravity="center"
+                android:text="@string/btn_compare_excel_data" />
+
+
+        </TableRow> -->
+
+        <TableRow
+            android:id="@+id/tableRowButton2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/btn_save_excel_data"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_span="8"
+                android:gravity="center"
+                android:text="@string/btn_save_excel_data" />
+
+            <Button
+                android:id="@+id/btn_send_mail_excel_data"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_span="6"
+                android:gravity="center"
+                android:text="@string/btn_send_mail_excel_data"
+                android:layout_column="8" />
+
+           <!-- <Button
+                android:id="@+id/btn_send_excel_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="5"
+                android:gravity="center"
+                android:text="@string/btn_send_excel_data" /> -->
+
+
+        </TableRow>
+    </TableLayout>
+
+</ScrollView>

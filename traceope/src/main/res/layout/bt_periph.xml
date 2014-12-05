@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:visibility="visible"
+    tools:context=".geolocActivity">
+
+    <TextView
+        android:id="@+id/titredetection1"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal|top"
+        android:background="#e37a26"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="Selectionnez le périphérique BlueTooth"
+        android:textAlignment="center"
+        android:textSize="22sp" />
+
+
+    <TextView
+        android:id="@+id/txt_bt_device"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/new_devices"
+        android:background="@color/grey"
+
+        android:gravity="center"
+        android:text="Reader"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <ListView
+        android:id="@+id/new_devices"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="72dp"
+        android:stackFromBottom="false"
+        android:textAlignment="center"></ListView>
+
+
+    <GridLayout
+        android:id="@+id/grid_reader_control"
+        android:layout_width="500dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/grid_reader_maintenance"
+        android:layout_alignStart="@+id/grid_reader_maintenance"
+        android:layout_below="@+id/txt_bt_device"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:useDefaultMargins="false"
+        android:visibility="visible">
+
+        <EditText
+            android:id="@+id/txt_id_tag"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:layout_column="0"
+            android:layout_gravity="right"
+            android:layout_row="1"
+            android:gravity="center"
+            android:inputType="number"
+            android:text="87654321" />
+
+        <Button
+            android:id="@+id/btn_reader_connect"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:layout_column="0"
+            android:layout_row="0"
+            android:alpha="1"
+            android:text="Reader connect" />
+
+        <TextView
+            android:id="@+id/TitleReaderStatus"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:layout_column="1"
+            android:layout_gravity="bottom"
+            android:layout_row="0"
+            android:background="@color/red"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="Reader Déconnecté"
+            android:textAlignment="center"
+            android:textSize="22sp" />
+
+        <Button
+            android:id="@+id/btn_geoloc_on"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:layout_column="1"
+            android:layout_row="1"
+            android:alpha="1"
+            android:text="Geoloc on" />
+
+        <Button
+            android:id="@+id/btn_reader_disconnect"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:layout_column="0"
+            android:layout_columnSpan="2"
+            android:layout_row="2"
+            android:alpha="1"
+            android:text="Reader disconnect" />
+
+        <Button
+            android:id="@+id/reset_com"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:layout_column="1"
+            android:layout_row="2"
+            android:text="Reset communication" />
+    </GridLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/grid_reader_control"
+        android:layout_marginLeft="200dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <RadioButton
+            android:id="@+id/rb_maintenance_view"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/grid_reader_control"
+            android:text="Maintenance" />
+
+    </LinearLayout>
+
+    <GridLayout
+        android:id="@+id/grid_reader_maintenance"
+        android:layout_width="500dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/linearLayout3"
+        android:layout_marginLeft="50dp"
+        android:visibility="visible">
+
+
+        <Button
+            android:id="@+id/btn_geoloc_mail"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="1"
+            android:alpha="1"
+            android:text="Send Geoloc Email" />
+
+
+        <Button
+            android:id="@+id/btn_firmware_update"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_row="1"
+            android:text="Update FW" />
+
+
+        <Button
+            android:id="@+id/Cal_X_Start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_marginLeft="75dp"
+            android:layout_row="2"
+            android:text="Start X-Cal" />
+
+        <Button
+            android:id="@+id/Cal_X_Stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_marginLeft="75dp"
+            android:layout_row="2"
+            android:text="Stop X-Cal" />
+
+        <Button
+            android:id="@+id/Cal_Y_Start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_marginLeft="75dp"
+            android:layout_row="3"
+            android:text="Start-Y-Cal" />
+
+        <Button
+            android:id="@+id/Cal_Y_Stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_marginLeft="75dp"
+            android:layout_row="3"
+            android:text="Stop-Y-Cal" />
+
+        <Button
+            android:id="@+id/Cal_Z_Start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_marginLeft="75dp"
+            android:layout_row="4"
+            android:text="Start-Z-Cal" />
+
+        <Button
+            android:id="@+id/Cal_Z_Stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_marginLeft="75dp"
+            android:layout_row="4"
+            android:text="Stop-Z-Cal" />
+    </GridLayout>
+
+    <Button
+        android:id="@+id/btn_search_device"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/traceope_orange"
+        android:text="(re)lancer la recherche.."
+        android:layout_below="@+id/grid_reader_maintenance"
+        android:layout_alignRight="@+id/linearLayout3"
+        android:layout_alignEnd="@+id/linearLayout3" />
+
+</RelativeLayout>
+
+

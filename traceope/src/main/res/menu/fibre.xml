@@ -1,0 +1,27 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.traceope.app.activity.FibreActivity" >
+
+    <item
+        android:id="@+id/user"
+        android:title="@string/user_login"
+        android:icon="@drawable/ic_action_person"
+        android:showAsAction="ifRoom|withText"/>
+
+    <item android:id="@+id/action_fibre"
+        android:title="@string/action_fibre"
+        android:orderInCategory="100"
+        android:showAsAction="never" />
+
+    <item android:id="@+id/action_bpe_compare"
+        android:title="@string/action_bpe_compare"
+        android:orderInCategory="100"
+        android:showAsAction="never" />
+
+    <item android:id="@+id/action_code_couleur"
+        android:title="@string/action_code_couleur"
+        android:orderInCategory="100"
+        android:showAsAction="never" />
+
+
+</menu>

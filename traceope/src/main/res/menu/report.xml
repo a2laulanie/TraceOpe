@@ -1,0 +1,26 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.traceope.app.activity.RopeActivity" >
+
+    <item
+        android:id="@+id/user"
+        android:title="@string/user_login"
+        android:icon="@drawable/ic_action_person"
+        android:showAsAction="ifRoom|withText"/>
+
+    <item android:id="@+id/action_report_free"
+        android:title="@string/action_free"
+        android:orderInCategory="100"
+        android:showAsAction="never" />
+
+    <item android:id="@+id/action_report_ticket"
+        android:title="@string/action_ticket"
+        android:orderInCategory="100"
+        android:showAsAction="never" />
+
+    <item android:id="@+id/action_code_couleur"
+        android:title="@string/action_code_couleur"
+        android:orderInCategory="100"
+        android:showAsAction="never" />
+
+</menu>

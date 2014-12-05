@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.traceope.app">
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.NFC" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MANAGE_DOCUMENTS"/>
+
+    <uses-permission android:name="android.permission.CAMERA"></uses-permission>
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_traceope_launcher"
+        android:label="@string/app_name"
+        android:logo="@drawable/ic_traceope"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.traceope.app.activity.MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="com.traceope.app.START_OPE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.traceope.app.activity.LoginActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.RopeActivity"
+            android:label="@string/title_activity_rope">
+
+            <intent-filter>
+                <action android:name="com.traceope.app.START_MENU_1" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activity.FibreActivity"
+            android:label="@string/title_activity_fibre"
+            >
+
+            <intent-filter>
+                <action android:name="com.traceope.app.START_MENU_2" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.traceope.app.fibre.BpeActivity"
+            android:label="@string/title_activity_fibre"
+            android:configChanges="orientation|screenSize"></activity>
+
+        <activity
+            android:name="com.traceope.app.fibre.ReaderActivity"
+            android:label="@string/title_activity_reader"></activity>
+
+        <activity
+            android:name="com.traceope.app.activity.SlideActivity"
+            android:label="@string/title_activity_slide"></activity>
+        <activity
+            android:name="com.traceope.app.rope.RouteActivity"
+            android:label="@string/title_activity_rope"></activity>
+        <activity
+            android:name="com.traceope.app.geoloc.GeolocActivity"
+            android:label="@string/title_activity_geoloc">
+            <intent-filter android:priority="100" >
+                <action android:name="android.intent.action.OPEN_DOCUMENT" />
+                <category android:name="android.intent.category.OPENABLE" />
+
+                <data android:mimeType="*/*" />
+            </intent-filter>
+
+            </activity>
+        <activity
+            android:name=".report.ReportFreeActivity"
+            android:label="@string/title_activity_report">
+            <intent-filter>
+                <action android:name="com.traceope.app.START_MENU_3" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+         </activity>
+        <activity
+            android:name="com.traceope.app.report.ReportTicketActivity"
+            android:label="@string/title_activity_ticket_report"></activity>
+
+
+        <activity android:name="com.traceope.app.tools.FileChooser">
+
+        </activity>
+
+
+    </application>
+
+</manifest>

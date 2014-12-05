@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--
+        These action bar item IDs (menu item IDs) are defined here for
+        programmatic use. Normally, IDs are created using the "@+id/foo"
+        syntax, but since these IDs aren't created in menu XML, rather
+        used for programmatically-instantiated action bar items, they
+        are defined here.
+    -->
+    <item type="id" name="action_next" />
+    <item type="id" name="action_flip" />
+
+    <!--
+       Camera
+   -->
+    <item type="id" name="button1" />
+    <item type="id" name="photo_image" />
+
+    <!--
+       rope
+   -->
+    <item type="id" name="action_tutoriel" />
+    <item type="id" name="action_detecteur" />
+    <item type="id" name="action_geoloc" />
+
+    <!--
+      maintenace
+  -->
+    <item type="id" name="action_maintenance" />
+    <item type="id" name="action_report_free" />
+    <item type="id" name="action_report_ticket" />
+
+    <item type="id" name="raw_incident" />
+
+
+
+
+
+
+</resources>

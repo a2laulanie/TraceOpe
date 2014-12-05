@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pre-dex-items>
+
+    <item
+        dex="/home/ale/Bureau/Android/workIvan2/TraceOpe 2/traceope/build/intermediates/pre-dexed/debug/classes-449dce09cb332e7cddafcdd7bea50b3805a5a815.jar"
+        jar="/home/ale/Bureau/Android/workIvan2/TraceOpe 2/traceope/build/intermediates/exploded-aar/com.android.support/gridlayout-v7/21.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.0"
+        sha1="6c6b497aa9e3aadbaabf975379e7914fa9e65523"/>
+    <item
+        dex="/home/ale/Bureau/Android/workIvan2/TraceOpe 2/traceope/build/intermediates/pre-dexed/debug/internal_impl-21.0.0-a44230699d05ff4d077c5b3bc41fddd2f5ac328a.jar"
+        jar="/home/ale/Bureau/Android/workIvan2/TraceOpe 2/traceope/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.0/libs/internal_impl-21.0.0.jar"
+        jumboMode="false"
+        revision="21.1.0"
+        sha1="1609e6d42d0480b0f4188e2c29f75388fa12a8f0"/>
+    <item
+        dex="/home/ale/Bureau/Android/workIvan2/TraceOpe 2/traceope/build/intermediates/pre-dexed/debug/jxl-cb0c20c5c0a7577937eb0b7fcb222d3be5b9daed.jar"
+        jar="/home/ale/Bureau/Android/workIvan2/TraceOpe 2/traceope/libs/jxl.jar"
+        jumboMode="false"
+        revision="21.1.0"
+        sha1="7faf62e0697f7a88954622dfe8c8de33ed142ac7"/>
+    <item
+        dex="/home/ale/Bureau/Android/workIvan2/TraceOpe 2/traceope/build/intermediates/pre-dexed/debug/classes-83814d6f6259f916b04e1c8a8d8867293bbac352.jar"
+        jar="/home/ale/Bureau/Android/workIvan2/TraceOpe 2/traceope/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.0"
+        sha1="95fd37732ec852e99f07eeb516a3650172f1d136"/>
+    <item
+        dex="/home/ale/Bureau/Android/workIvan2/TraceOpe 2/traceope/build/intermediates/pre-dexed/debug/support-annotations-21.0.0-3d078070f03dff6f714086d870fe794b160dd4dd.jar"
+        jar="/home/ale/Bureau/Android/android-sdk-linux/extras/android/m2repository/com/android/support/support-annotations/21.0.0/support-annotations-21.0.0.jar"
+        jumboMode="false"
+        revision="21.1.0"
+        sha1="1a578b9607b36266c63d43a4fa0ab5664dbe911e"/>
+    <item
+        dex="/home/ale/Bureau/Android/workIvan2/TraceOpe 2/traceope/build/intermediates/pre-dexed/debug/classes-82ff351eeec290532c18d8d5bd883bfa14ce92a3.jar"
+        jar="/home/ale/Bureau/Android/workIvan2/TraceOpe 2/traceope/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.0"
+        sha1="686344a780033e4ba22b926cd225f8d4941247e6"/>
+    <item
+        dex="/home/ale/Bureau/Android/workIvan2/TraceOpe 2/traceope/build/intermediates/pre-dexed/debug/jtar-1.1-cff23ed879a6433bb11c0afa1a9d59c1a828fd62.jar"
+        jar="/home/ale/Bureau/Android/workIvan2/TraceOpe 2/traceope/libs/jtar-1.1.jar"
+        jumboMode="false"
+        revision="21.1.0"
+        sha1="3852e8d03269dfdb3500175cb09fd7c47a6b4515"/>
+    <item
+        dex="/home/ale/Bureau/Android/workIvan2/TraceOpe 2/traceope/build/intermediates/pre-dexed/debug/commons-lang3-3.3.1-1535740551b3cb8c93e7cb568b48650611b9475e.jar"
+        jar="/home/ale/Bureau/Android/workIvan2/TraceOpe 2/traceope/libs/commons-lang3-3.3.1.jar"
+        jumboMode="false"
+        revision="21.1.0"
+        sha1="63de8a49b95145202032b00e964efb2b6c61ac79"/>
+
+</pre-dex-items>

@@ -1,0 +1,73 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:background="@color/traceope_orange"
+    tools:context="com.traceope.app.activity.MainActivity">
+
+   <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+       android:gravity="center"
+       android:background="@color/white"
+       android:layout_centerHorizontal="true"
+       android:layout_alignParentTop="true"
+       android:layout_alignParentBottom="true"
+       android:layout_margin="10dp">
+
+       <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:layout_width="135dp"
+            android:layout_height="135dp"
+            android:text="@string/menu_1"
+            android:id="@+id/menu_1"
+            android:gravity="center"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:background="@color/traceope_purple"
+            android:textColor="@android:color/black"
+
+            />
+
+        <TextView
+            android:layout_width="135dp"
+            android:layout_height="135dp"
+            android:text="@string/menu_2"
+            android:id="@+id/menu_2"
+            android:gravity="center"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:background="@color/traceope_orange"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:layout_width="135dp"
+            android:layout_height="135dp"
+            android:text="@string/menu_3"
+            android:id="@+id/menu_3"
+            android:gravity="center"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:background="@color/traceope_orange"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:layout_width="135dp"
+            android:layout_height="135dp"
+            android:id="@+id/menu_4"
+            android:gravity="center"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:background="@drawable/ic_traceope_launcher"
+            android:textColor="@android:color/black"/>
+
+    </GridLayout>
+
+   </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal"
+    android:background="@color/traceope_orange"
+    android:id="@+id/login">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:weightSum="1"
+    android:baselineAligned="false"
+    android:gravity="center">
+
+    <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="463dp"
+        android:gravity="center_vertical"
+        android:fadeScrollbars="false"
+        android:background="@color/white"
+       >
+
+        <TableRow
+            android:id="@+id/tableRow6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/ic_traceope_launcher"
+                />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp">
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="false">
+
+            <EditText
+                android:id="@+id/et_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:width="250dp" android:layout_marginLeft="30dp" android:layout_marginBottom="10dp" android:hint="@string/u"
+                android:layout_marginRight="30dp"
+                 >
+
+                <requestFocus />
+            </EditText>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <EditText
+                android:id="@+id/et_pw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword" android:layout_marginLeft="30dp" android:layout_marginBottom="10dp" android:hint="@string/p"
+                android:layout_marginRight="30dp"
+               />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/l" android:layout_marginLeft="30dp" android:layout_marginBottom="10dp"
+                android:textSize="20dp"
+                android:layout_marginRight="30dp"
+              />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/btn_reg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/r" android:layout_marginLeft="30dp" android:layout_marginBottom="10dp" android:textSize="20dp"
+                android:layout_marginRight="30dp"
+                />
+
+        </TableRow>
+
+
+    </TableLayout>
+
+</LinearLayout>
+
+</RelativeLayout>
